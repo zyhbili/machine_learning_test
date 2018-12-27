@@ -81,7 +81,7 @@ def train(d,lr):
         print("错分个数:",err_count)
         if i%10==0:
             draw(trainDataGirls,trainDataBoys,w,d)
-        if err_count<120:
+        if err_count<110:
             draw(trainDataGirls, trainDataBoys, w, d)
             break
         w=w.T
@@ -140,4 +140,4 @@ def draw3D(trainDataGirls,trainDataBoys,w):
     plt.show()
 
 train3D(0.01)
-train(2,0.01)
+# train(2,0.01)
